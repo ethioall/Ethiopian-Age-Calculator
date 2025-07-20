@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #1d2b6c;
+    --secondary-color: #4705FF;
+    --text-color: #333;
+    --card-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.calculator {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: var(--card-shadow);
+}
+
+/* FAQ styles */
+.faq-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        padding: 15px;
+    }
+}
