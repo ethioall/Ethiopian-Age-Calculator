@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Age Calculator</title>
+    <meta name="description" content="Calculate your age according to the Ethiopian calendar system">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Ethiopian Age Calculator</h1>
+        <p>Calculate your age according to the Ethiopian calendar system</p>
+    </header>
+
+    <main>
+        <section class="calculator">
+            <!-- Calculator form goes here -->
+            <div class="input-group">
+                <label>Birth Date Type:</label>
+                <select id="birthDateType" class="form-control">
+                    <option value="ethiopian">Ethiopian Calendar</option>
+                    <option value="gregorian">Gregorian Calendar</option>
+                </select>
+            </div>
+            
+            <!-- Rest of calculator HTML -->
+        </section>
+
+        <section class="info-section">
+            <h2>About the Ethiopian Calendar</h2>
+            <p>The Ethiopian calendar is 7-8 years behind the Gregorian calendar...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ethiopian Age Calculator</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
